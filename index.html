@@ -3,128 +3,278 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <title>Ayush M | Cybersecurity Portfolio</title>
 
   <link rel="stylesheet" href="style.css" />
+
 </head>
 
 <body>
 
   <!-- ===== Navbar ===== -->
   <nav aria-label="Main navigation">
+    <a href="#about">About Me</a>
     <a href="#profiles">Profiles</a>
     <a href="#education">Education</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#certificates">Certificates</a>
     <a href="#contact">Contact</a>
-    <a href="https://drive.google.com/file/d/1e9GS_z1TIS4HU4Tg2Tjw9LN18gE1w0UC/view?usp=sharing" class="resume-btn" target="_blank">Resume</a>
 
   </nav>
 
   <!-- ===== Hero ===== -->
-  <header class="hero">
-    <img src="profile.png" alt="Portrait of Ayush M" class="hero-photo" />
+<header class="hero">
 
-    <h1>Ayush M</h1>
+  <h1 class="hero-title">
+  Hi, Ayush M here <span class="wave">👋</span><br>
+  <span class="typing-text"></span>
+</h1>
 
-    <p class="hero-tagline">
-      I am a cybersecurity student focused on operating system security,
-       network analysis, and real-time threat monitoring, with a strong
-      interest in building practical security tools and developing both
-       defensive and offensive security skills.
-    </p>
+  <p class="hero-tagline">
+    Cybersecurity student focused on operating system security, network analysis,
+    and real-time threat monitoring. I enjoy building practical security tools
+    and strengthening both defensive and offensive security skills.
+  </p>
 
+  <div class="hero-buttons">
     <a class="button" href="#projects">View My Projects</a>
-  </header>
+    <a class="button resume-btn" href="" target="_blank">View My Resume</a>
+  </div>
+
+</header>
+
 
   <!-- ===== Profiles ===== -->
-  <section id="profiles">
-    <h2>Profiles & Presence</h2>
+<section id="about">
+  <h2>About Me</h2>
 
-    <div class="profiles-grid">
+  <div class="about-container">
 
-      <div class="profile-badge">
-        <h3>LinkedIn</h3>
-        <a href="https://www.linkedin.com/in/ayush-m-gowda/" target="_blank" rel="noopener noreferrer">
-          <img src="linkedin_profile_badge.png" alt="LinkedIn profile preview of Ayush M">
-        </a>
+    <img src="profile.png" alt="Ayush profile photo" class="about-photo">
+
+    <div class="about-text">
+      <p>
+        I am a B.Tech Computer Science student specializing in cybersecurity,
+        with strong interest in operating system security, digital forensics,
+        and network defense.
+      </p>
+
+      <p>
+        I actively build hands-on security tools, practice real-world labs on
+        platforms like TryHackMe, and continuously improve my Linux,
+        networking, and threat-analysis skills.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Profiles ===== -->
+<section id="profiles">
+  <h2>Profiles & Presence</h2>
+
+  <div class="profiles-grid">
+
+    <!-- GitHub -->
+    <div class="profile-card">
+      <h3 class="profile-title">GitHub</h3>
+
+      <div class="profile-media">
+        <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=AyushMGowda&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" alt="GitHub Stats">
       </div>
 
-      <div class="profile-badge">
-        <h3>GitHub</h3>
-        <a href="https://github.com/AyushMGowda" target="_blank" rel="noopener noreferrer">
-          <img src="github_profile_badge.png" alt="GitHub profile preview of Ayush M">
-        </a>
+      <div class="profile-media">
+        <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=AyushMGowda&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" alt="Top Languages">
       </div>
 
-      <div class="profile-badge">
-        <h3>TryHackMe</h3>
-        <!-- iframe should NOT be inside anchor -->
-        <iframe
+      <a href="https://github.com/AyushMGowda" target="_blank" class="profile-btn">
+        Visit GitHub
+      </a>
+    </div>
+
+    <!-- TryHackMe -->
+    <div class="profile-card">
+      <h3 class="profile-title">TryHackMe</h3>
+
+      <div class="profile-media">
+        <iframe 
           src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=5885483"
-          loading="lazy"
-          title="TryHackMe public badge for ayushmgowda5">
+          title="TryHackMe Public Profile Badge">
         </iframe>
       </div>
 
+      <a href="https://tryhackme.com/p/ayushmgowda5" target="_blank" class="profile-btn">
+        View THM Profile
+      </a>
     </div>
-  </section>
-
+  </div>
+</section>
   <!-- ===== Education ===== -->
 <section id="education">
   <h2>Academic Background</h2>
 
-  <div class="edu-timeline">
+  <div class="edu-timeline" >
 
-    <div class="edu-card highlight">
-      <h3>B.Tech – Computer Science</h3>
+    <div class="edu-card current">
+      <a href="https://www.lpu.in/" target="_blank" rel="noopener noreferrer">
+        <h3>B.Tech – Computer Science</h3>
       <p class="edu-place">Lovely Professional University · Punjab, India</p>
       <p class="edu-meta">CGPA: 6.06 · Since 2023 – Present</p>
+      </a>
     </div>
 
     <div class="edu-card">
+      <a href="https://www.stphilomenascollege.com/" target="_blank" rel="noopener noreferrer">
       <h3>Intermediate (12th)</h3>
       <p class="edu-place">St. Philomena’s PUC · Bengaluru, Karnataka</p>
       <p class="edu-meta">Percentage: 73% · 2020 – 2023</p>
+      </a>
     </div>
 
     <div class="edu-card">
+      <a href="https://www.stphilomenaspublicschool.com/" target="_blank" rel="noopener noreferrer">
       <h3>Matriculation (10th)</h3>
       <p class="edu-place">St. Philomena’s Public School · Bengaluru, Karnataka</p>
       <p class="edu-meta">Percentage: 76% · 2010 – 2020</p>
+      </a>
     </div>
 
   </div>
 </section>
 
   <!-- ===== Skills ===== -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>Python</span>
-      <span>C++</span>
-      <span>Java</span>
-      <span>Linux</span>
-      <span>Networking</span>
-      <span>Wireshark</span>
-      <span>Nmap</span>
-      <span>Git & GitHub</span>
-      <span>Docker Desktop</span>
-      <span>Maven</span>
+<section id="skills" class="skills-section">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skill-category lang">
+    <div class="category-header">Programming Languages</div>
+    <div class="skill-list">
+      <div class="skill-item">
+        <span>Python</span>
+        <div class="progress-bar">
+          <div class="progress" data-level="85%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <span>C++</span>
+        <div class="progress-bar">
+          <div class="progress" data-level="70%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <span>Java</span>
+        <div class="progress-bar">
+          <div class="progress" data-level="65%"></div>
+        </div>
+      </div>
+
+<div class="skill-item">
+        <span>DSA</span>
+        <div class="progress-bar">
+          <div class="progress" data-level="60%"></div>
+        </div>
+      </div>
+
     </div>
+  </div>
 
-    <h3 class="skills-subtitle">Currently Exploring</h3>
+  <div class="skill-category security">
+    <div class="category-header">Security Tools</div>
+    <div class="skill-list">
+      <div class="skill-item">
+        <span>Nmap</span>
+        <div class="progress-bar">
+          <div class="progress" data-level="85%"></div>
+        </div>
+      </div>
 
-<div class="skills learning">
-  <span>Burp Suite</span>
-  <span>Metasploit</span>
-  <span>John the Ripper</span>
-  <span>Hashcat</span>
-  <span>Netcat</span>
-  <span>Socat</span>
-  <span>Splunk / ELK</span>
-  <span>OWASP Top 10 Exploitation</span>
+      <div class="skill-item">
+        <span>Wireshark</span>
+        <div class="progress-bar">
+          <div class="progress" data-level="70%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <span>Burp Suite</span>
+        <div class="progress-bar">
+          <div class="progress" data-level="65%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <span>John the Ripper</span>
+        <div class="progress-bar">
+          <div class="progress" data-level="65%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <span>Hashcat</span>
+        <div class="progress-bar">
+          <div class="progress" data-level="65%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <span>Netcat</span>
+        <div class="progress-bar">
+          <div class="progress" data-level="65%"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    <div class="skill-category devops">
+    <div class="category-header">DevOps / System Tools</div>
+    <div class="skill-list">
+      <div class="skill-item">
+        <span>Linux</span>
+        <div class="progress-bar">
+          <div class="progress" data-level="85%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <span>Git & GitHub</span>
+        <div class="progress-bar">
+          <div class="progress" data-level="70%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <span>Docker</span>
+        <div class="progress-bar">
+          <div class="progress" data-level="65%"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <span>Bash</span>
+        <div class="progress-bar">
+          <div class="progress" data-level="65%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="category-header">Currently Learning</div>
+<div class="learning-grid">
+  <div class="learn-card">Splunk / ELK</div>
+  <div class="learn-card">Malware Analysis Basics</div>
+  <div class="learn-card">Privilege Escalation</div>
+  <div class="learn-card">Web Exploitation</div>
+</div>
+
+<div class="radar-container">
+  <h3 class="radar-title">Cybersecurity Skill Radar</h3>
+  <canvas id="cyberRadar"></canvas>
 </div>
 
   </section>
@@ -283,6 +433,9 @@
   <footer>
     <p>© 2026 Ayush — Cybersecurity Portfolio</p>
   </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
