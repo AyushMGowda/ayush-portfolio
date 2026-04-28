@@ -34,4 +34,4 @@ Cybersecurity Student focused on OS security, networking, and threat monitoring.
 
 - GitHub: https://github.com/AyushMGowda  
 - LinkedIn: https://linkedin.com/in/ayush-m-gowda 
-- Also visit my portfolio through this link: [Ayush-Portfolio](https://ayushmgowda.github.io/ayush-portfolio/)
+- Also visit my portfolio through this link: [Ayush-M-Gowda-Portfolio](https://ayushmgowda.github.io/ayush-portfolio/)
